@@ -1,0 +1,1561 @@
+/*
+Theme Name: Etereman Theme
+Auth: Mitch Alforque
+*/
+
+/* Custom  */
+html * {
+    font-family: 'Gotham Book';
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.margin-2 {
+    margin: 2em;
+}
+
+.margin-r-2 {
+    margin-right: 2em;
+}
+
+.margin-r-1 {
+    margin-right: 1em !important;
+}
+
+.margin-l-2 {
+    margin-left: 2em;
+}
+
+.margin-l-1 {
+    margin-left: 1em !important;
+}
+
+.margin-t-1 {
+    margin-top: 1em;
+}
+
+.margin-t-2 {
+    margin-top: 2em;
+}
+
+.margin-b-1 {
+    margin-bottom: 1em; 
+}
+
+.margin-b-2 {
+    margin-bottom: 2em;
+}
+
+.margin-b-5 {
+    margin-bottom: 5em;
+}
+
+.margin-x-2 {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sticky-top {
+    position: sticky;
+    -webkit-position: sticky;
+    z-index: 1022;
+    top: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+/* divider */
+.divider {
+    background: #a29f9f;
+    margin-bottom: 20px;
+}
+
+/* LOGO */
+.etereman-logo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 2em;
+    top: -.5em;
+}
+
+/* headline */
+.headline {
+    background: #002679;
+    height: 6vh;
+}
+
+.headline-text {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.headline-text span {
+    font-family: 'Open Sans', 'sans-serif';
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.headline-icons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headline-icons span{
+    margin-right: 1em;
+}
+
+.headline-icons span > i {
+    font-size: 20px;
+}
+
+.headline-icons-mobile {
+    display: flex;
+    flex-direction: row wrap;
+    padding: 0 32px;
+}
+
+.headline-icons-mobile span {
+    margin-right: 1em;  
+}
+
+
+.headline-icons-mobile span > i {
+    font-size: 20px;
+}
+
+
+/* text-black */
+.text-black {
+    color: #000000;
+}
+
+/* background white */
+.white-bg {
+    background: #ffffff;
+}
+
+/* default bg */
+.default-bg  {
+    background: #002679;
+}
+
+.flexbox-row-center {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* background red */
+.red-bg {
+    background: #ca2730;
+}
+
+/* nav-items-center */
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* nav-items-start */
+.nav-start {
+    display: flex;
+    justify-content: start;
+}
+
+.justify-content-start {
+    justify-content: start !important;
+}
+
+.searchbar {
+    margin-left: auto !important;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    border: 1px solid rgba(0,0,0,.1) !important;
+    box-shadow: none !important;
+    padding: 0 7px 0 7px !important;
+    border-right: none !important;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    margin: 0 !important;
+}
+
+.searchbar span {
+    padding: 0.5em;
+    color: #000000;
+    font-size: 16px;
+    height: 3.15rem;
+    display: flex;
+    align-items: center;
+    border-left: none !important;
+    border: 1px solid rgba(0,0,0,.1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* nav-items links */
+.nav-center li > a, .sidenav li > a {
+    color: #002679;
+    font-family: 'Open Sans', 'sans-serif';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+li > a.active {
+    color: #f92c2c !important   ;
+}
+
+.show-on-mobile {
+    position: absolute;
+    flex-flow: column;
+    line-height: 1.5em;
+    top: 10%;
+    right: 32.5%;
+    text-align: center;
+    display: none !important;
+}
+
+
+/* carousel  */
+.carousel {
+    height: 600px !important;
+}
+
+.carousel-caption {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+.carousel-caption h2 {
+    font-family: 'Gotham Bold';
+    font-size: 3rem !important;
+    line-height: 48px !important;
+}
+
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel .indicators {
+    bottom: 7em;
+}
+
+.indicator-item {
+    height: 1em !important;
+    width: 1em !important;
+    border: 1px solid #ffffff;
+}
+
+.indicator-item.active {
+    background-color: #f92c2c !important;
+    border: none !important;
+}
+
+/* page content */
+.main-cont {
+    position: relative;
+}
+
+.message-icon {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: -15%;
+    top: -30%;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+
+/* info */
+.info-top {
+    position: absolute;
+    top: -18em;
+    z-index: 1019;
+    height: 14em;
+}
+
+.info-image {
+    height:  14em;
+}
+
+.info-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.info-text-divider {
+    width: 1em !important;
+    align-self: center;
+    height: 5px !important;
+}
+
+.info-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5em !important;
+    font-family: 'Gotham Book';
+    color: #ffffff;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.info-text-top {
+    font-size: 18px;
+}
+
+.info-text-bottom {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* company overview */
+.company-info {
+    margin-top: 10em;
+}
+
+.company-info-header {
+    font-family: 'Gotham Light';
+}
+
+.company-info-header-text h3 {
+    font-size: 30px !important;
+    color: #002679;
+}
+
+.company-info-header-video {
+    display: flex;
+    height: 60vh;
+}
+
+.company-info-header-video iframe{ 
+    height: 100%;
+    width: 100%;
+} 
+
+/* services */
+.services-list {
+    height: 70vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: 10em;
+}
+
+.services-list .card {
+    height: 100%;
+    border-top: 2px solid #ca2730;
+}
+
+.services-info {
+    height: 50%;
+    padding: .5em !important;
+}
+
+.services-info-details {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-info-details-text {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 75%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Gotham Bold';
+    font-size: 35px;
+}
+
+.service-info-details-buttons {
+    display: flex;
+    height: 25%;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.service-info-details-buttons button {
+    background: #ca2730;
+    border: 1px solid #d3d3d3;
+    margin-right: 1em;
+    margin-left: 1em;
+    width: 45%;
+}
+
+.btn:hover {
+    background: #ca2730;
+} 
+
+/* feedback */
+.feedback-info {
+    height: 100%;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: 15em;
+    margin-bottom: 5em;
+}
+
+.feedback-info .card-container {
+    height: 100%;
+    border: none;
+    border-top: 2px solid #ca2730 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: none !important;
+}
+
+.feedback-logo {
+    position: absolute;
+    height: 250px;
+    left: 40%;
+    top: -20%;
+    width: 250px;
+}
+
+.feedback-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.feedback-heading {
+    display: flex;
+    margin-top: 5em;
+    height: 20%;
+    font-size: 30px;
+    font-family: 'Gotham Light';
+    text-transform: uppercase;
+}
+
+.feedback-header .container {
+    margin-top: 2em;
+}
+
+.feedback-heading span {
+    color: #002679;
+}
+
+.feedback-card {
+    max-width: 350px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.feedback-card-content-logo {
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; 
+    top: -15%;
+}
+
+.feedback-card-content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gotham Book';
+}
+.feedback-card-content span:nth-child(2) {
+    margin-top: 1em;
+}
+
+.feedback-card-content span:nth-child(3) {
+    font-size: 13px;
+    color: #ca2730;
+}
+
+.feedback-card-content span:last-child {
+    margin-top: 1em;
+    font-family: 'Gotham Light';
+}
+
+.feedback-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
+
+.feedback-divider span {
+    height: 3px;
+    width: 5vh;
+    background: red;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+/* page support */
+.list-of-benefits {
+    display: list-item;
+    padding-left: 1em !important;;
+}
+
+.list-of-benefits li {
+    list-style-type: disc !important;
+}
+
+.page-support-info-top {
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.page-support-info-top-text {
+    color: #ffffff;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.page-support-info-top-text h1 {
+    font-family: 'Gotham Bold';
+}
+
+.page-support-info-top-text span {
+    text-transform: initial;
+    font-size: 20px;
+}
+
+.page-content-container {
+    margin-bottom: 0 !important;
+    background: #ffffff;
+}
+
+.page-support-content-left-container {
+    padding-left: 5em !important;
+    padding-right: 2em !important;
+    padding-bottom: 5em !important;
+    margin-top: 5em;
+}
+
+.page-support-content-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-support-content-left-header {
+    font-size: 30px;
+    font-weight: bold !important;
+}
+
+.page-support-content-left-form {
+    background: #e7e7e7;
+    padding: 2em;
+}
+
+.page-support-content-left-form-header {
+    font-size: 20px
+}
+
+.page-support-content-right-container {
+    padding-right: 5em !important;
+    padding-left: 2em !important;
+    padding-bottom: 5em !important;
+    margin-top: 5em;
+}
+
+.page-support-content-right {
+    padding: 5em 2em 2em 2em;
+    background: #e7e7e7;
+    align-items: center;
+}
+
+.page-support-content-right-header {
+    font-size: 20px;
+    font-weight: bold !important;
+}
+
+.page-support-content-right-header-image {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.page-support-content-right-message {
+    width: 90px;
+    height: 90px;    
+    margin-top: 5em;
+    margin-left: auto;
+}
+
+.page-support-content-right-message-btn {
+    border-radius: 100%;
+    height: 100%;
+    border: none;
+    justify-content: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.page-support-content-right-message-btn i{
+    font-size: 25px;
+}
+
+.page-support-content-right-message-btn span{
+    font-size: 10px;
+}
+
+/* philosophy */
+.philosophy-left-header {
+    margin-bottom: 0 !important;
+}
+
+.philosophy-left-image {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+}
+
+/* contact */
+.contact-info-top {
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.contact-info-top-text {
+    color: #ffffff;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.contact-info-top-text h1 {
+    font-family: 'Gotham Bold';
+}
+
+.contact-info-top-text span {
+    text-transform: initial;
+    font-size: 20px;
+}
+
+.contact-content-container {
+    margin-bottom: 0 !important;
+    background: #ffffff;
+}
+
+.contact-content-left-container {
+    padding-left: 5em !important;
+    padding-right: 2em !important;
+    padding-bottom: 5em !important;
+    margin-top: 5em;
+}
+
+.contact-content-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content-left-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-content-left-form {
+    background: #ffffff;
+}
+
+.contact-content-left-form-header {
+    font-size: 20px
+}
+
+.contact-content-right-container {
+    padding-right: 5em !important;
+    padding-left: 2em !important;
+    padding-bottom: 5em !important;
+    margin-top: 5em;
+    position: relative;
+}
+
+.contact-content-blank-image {
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,.1);
+}
+
+.contact-content-right {
+    padding: 0em 2em 2em 2em;
+    background: #e7e7e7;
+    align-items: center;
+}
+
+.contact-content-right-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-content-right-header-image {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-content-right-message {
+    width: 90px;
+    height: 90px;    
+    margin-top: 5em;
+    margin-left: auto;
+}
+
+.contact-content-right-message-btn {
+    border-radius: 100%;
+    border: none;
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    top: -5%;
+    position: absolute;
+    right: 8%;
+}
+
+.contact-content-right-message-btn i{
+    font-size: 25px;
+}
+
+.contact-content-right-message-btn span{
+    font-size: 10px;
+}
+
+.contact-content-testimonial {
+    width: 80%;
+    padding: 1em;
+}
+
+/* tabs */
+.tabs-container {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.tabs-row {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.tabs {
+    display: flex;
+    width: 80%;
+    background: #f5f5f5;
+}
+
+.tabs .tab a {
+    color: rgba(0, 38, 121, 0.7) !important;
+    text-transform: initial;
+    font-size: 20px;
+}
+
+.tabs li > a.active {
+    color: #002679 !important;
+} 
+
+.tabs .indicator {
+    background: #002679 !important;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background: rgba(191, 178, 246, 0.2) !important;
+ }
+
+.tab-careers-info-video-container {
+    height: 100vh;
+}
+
+.tab-careers-info-video-container iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.tab-list-container {
+    position: relative;
+    background: #f5f5f5;
+}
+
+.tab-content {
+    background: #f5f5f5;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.tab-content-info-left {
+    padding: 2em 1em 2em 2em !important;
+}
+
+.tab-content-info-left-news-image {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+}
+
+.tab-content-info-left-btn {
+    width: 20%;
+}
+
+.tab-content-info-right {
+    padding: 2em 2em 2em 1em !important;
+}
+
+.tab-content-info-right-details {
+    background: #e6e6e6;
+    padding: 0 2em 2em 2em;
+}
+
+.tab-content-info-right-image {
+    height: 20vh;
+    width: 100%;
+}
+
+.tab-content-info-right-text span:nth-child(1) {
+    font-size: 15px;
+}
+
+.tab-content-info-right-text span:nth-child(2) {
+    font-size: 18px;
+}
+
+.tab-content-info-right-details > .divider:last-child {
+    display: none;
+}
+
+.tab-careers-top-section {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.tab-careers-bottom-section {
+    padding: 2em;
+}
+
+.tab-careers-content-left {
+    padding: 2em !important;
+}
+
+.tab-careers-content-left-image {
+    width: 250px;
+    height: 250px;
+}
+
+.tab-careers-content-right {
+    padding: 2em !important;
+}
+
+.tab-careers-search-job {
+    padding: 2em !important;
+    background: #cecccc;
+}
+
+.tab-careers-search-job-select {
+    margin-right: 4em !important;
+}
+
+.tab-careers-search-job-input i.prefix {
+    right: 0 !important;
+}
+
+.tab-careers-search-job-input input {
+    margin-left: 0 !important;
+} 
+
+.tab-careers-search-job-input label {
+    margin-left: 0 !important;
+} 
+
+.need-help {
+    border-radius: 100%;
+    border: none;
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    bottom: 10%;
+    position: absolute;
+    right: 1%;
+}
+
+.need-help i {
+    font-size: 25px;
+}
+
+.need-help span {
+    font-size: 10px;
+}
+
+/* chat box */
+.chat-box-container {
+    border: none;
+    background-color: #fff;
+    position: fixed;
+    height: 0px;
+    right: 10%;
+    bottom: 0;
+    z-index: 1023;
+    width: 350px;
+    border-radius: 10px 10px 0 0 !important;
+    transition: .3s ease-in-out !important;
+}
+
+.chat-box-container.active {
+    height: 450px !important;
+    border: 1px solid #ccc;
+}
+
+.chat-box-helper {
+    border-radius: 10px 10px 0 0 !important;
+    padding: 1em;
+    color: #fff;
+    background: #002679;
+}
+
+.chat-box-icon-minimize {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    position: relative;
+}
+
+.chat-button {
+    position: fixed;
+    cursor: pointer;
+    transform-origin: center center;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    background-color: #ca2730;
+    right: 5%; 
+    bottom: 2%;
+    z-index: 1022;
+} 
+
+.chat-button-first-content {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
+}
+
+.chat-button-first-content svg {
+    height: 25px;
+    width: 25px;
+    fill: #FFF;
+}
+
+.chat-button-first-content.active {
+    opacity: 0;
+}
+
+.chat-button-second-content {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    opacity: 0;
+    transform: rotate(-90deg);
+    transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
+}
+
+.chat-button-second-content svg {
+    height: 14px;
+    width: 14px;
+    fill: #FFF;
+}
+
+.chat-button-second-content.active {
+    opacity: 1;
+}
+
+.footer-button {
+    border: 1px solid #FFF !important;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    z-index: 100;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.footer-button i {
+    font-size: 1.5em;
+}
+
+.footer-logo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 45%;
+    top: -35%;
+}
+
+.footer-wrapper {
+    padding: 4em 0 2em 0;
+}
+
+.content-container {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Gotham Book';
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.footer-icons span {
+    margin-right: 1em;
+}
+
+.footer-text{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: .5em;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Gotham Book';
+    font-size: 12px;
+}
+
+@media (min-width: 1900px) {
+    .info-top {
+        left: 0;
+        right: 0;
+    }
+
+    .message-icon {
+        right: -40%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .etereman-logo {
+        left: .5em;
+    }
+
+    .sidenav.right-aligned {
+        z-index: 1023;
+    } 
+
+    .headline-icons span > i {
+        font-size: 18px;
+    }
+
+    .headline-text span {
+        font-size: 11px;
+    }
+
+    nav .sidenav-trigger {
+        display: block !important;
+    }
+
+    .hide-on-med-and-down {
+        display: none !important;
+    }
+
+    .info-top {
+        top: -60%;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: 16em;
+    }
+
+    .info-image {
+        height: 16em;
+    }
+
+    .message-icon {
+        height: 80px;
+        width: 80px;
+        right: -15%;
+        top: -25%;
+    }
+
+    .carousel .indicators {
+        bottom: 6em;
+    }
+
+    .info-text-top {
+        font-size: 16px;
+    }
+
+    .info-text-bottom {
+        font-size: 10px;
+    }
+
+    .service-info-details-buttons button {
+        width: 40%;
+    }
+
+    .feedback-card {
+        max-width: 250px;
+    }
+
+    .show-on-mobile {
+        display: flex !important;
+        flex-direction: row;
+        top: 32.5%;
+        right: 35%;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .chat-button {
+        right: 7.5%;
+    }
+
+    br {
+        display: none;
+    }
+
+    .carousel .indicators {
+        bottom: 7em;
+    }
+
+    .info-top {
+        top: -65%;
+        width: auto;
+        height: 16em;
+        left: 7em;
+        right: 7em;
+    }
+
+    .info-image {
+        height: 16em;
+    }
+
+    .message-icon {
+        height: 70px;
+        width: 70px;
+        right: -5%;
+        top: -30%;
+    }
+
+    .info-text-top {
+        font-size: 13px;
+    }
+
+    .info-text-bottom {
+        font-size: 10px;
+        white-space: unset;
+    }
+
+    .headline-text span {
+        font-size: 10px;
+    }
+
+    .etereman-logo {
+        right: 9.5em;
+        height: 90px;
+        width: 90px;
+        left: initial;
+    }
+
+    .services-list {
+        height: 75vh;
+    }
+
+    .feedback-info {
+        margin-top: 50em;
+    }
+
+    .feedback-logo {
+        height: 150px;
+        width: 150px;
+        top: -10%;
+    }
+
+    .feedback-card {
+        margin: 1em 1em 2em 1em;
+    }
+
+    .show-on-mobile {
+        display: flex !important;
+        flex-direction: row;
+        top: 32.5%;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .main-cont {
+        width: 100% !important;
+    }
+
+    .tab-content-info-right {
+        padding: 2em !important;
+    }
+
+    .chat-box-container {
+        right: 15%; 
+    }
+
+    .carousel {
+        height: 70vh !important;
+    }
+
+    .tab-content-info-right-image {
+        height: 20vh;
+    }
+
+    .tab-content-info-right-text span:nth-child(1), .tab-content-info-right-text span:nth-child(2) {
+        font-size: 15px;
+    }
+
+    .show-on-mobile {
+        display: flex !important;
+        flex-direction: column;
+        top: 10%;
+        right: 32.5%;
+    }
+
+    .show-on-mobile span:first-child {
+        margin-right: 0 !important;
+    }
+
+    .tab-careers-info-video-container {
+        height: 60vh;
+    }
+
+    .page-support-info-top {
+        height: 60vh;
+    }
+    
+    nav .brand-logo {
+        left: 55%;
+    }
+
+    .chat-button {
+        right: 1%;
+        bottom: 10%;
+    }
+
+    .chat-button i {
+        font-size: 1em;
+    }
+    
+    .footer-button {
+        right: 2%;
+        bottom: 2%;
+    }
+
+    .contact-content-right-container {
+        margin-top: 0em;
+        padding-right: 2em !important;
+    }
+
+    .contact-content-testimonial-container {
+        flex-direction: column-reverse !important;
+    }
+    
+    .contact-content-testimonial {
+        width: 100%;
+    }
+
+    .contact-info-top {
+        height: 60vh;
+    }
+
+    .contact-content-left-container {
+        padding-left: 2em !important;
+    }
+
+    .tabs .tab a {
+        font-size: 15px;
+    }
+    
+    .tabs {
+        width: 100%;
+    }
+
+    .need-help {
+        display: none;
+    }
+    .tabs-row {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .page-support-info-top-text h1 {
+        font-size: 2.5em;
+    }
+
+    .page-support-info-top-text span {
+        font-size: 16px;
+    }
+
+    .page-support-content-left-header {
+        font-size: 25px;
+    }
+
+    .page-support-content-left-form {
+        width: 100%;
+    }
+
+    .page-support-content-left-container {
+        padding-left: 2em !important;
+    }
+
+    .page-support-content-right-container {
+        display: none !important;
+    }
+
+    .contact-info-top-text h1 {
+        font-size: 25px;
+    }
+
+    .message-icon {
+        height: 70px;
+        width: 70px;
+        z-index: 1021;
+        right: -3%;
+        top: -25%;
+    }
+    .headline {
+        display: none;
+    }
+
+    .etereman-logo {
+        left: -7.5em;
+        top: .5em;
+        height: 80px;
+        width: 80px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .carousel .indicators {
+        bottom: 3.5em;
+    }
+
+    .services-list {
+        height: 85vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2em !important;
+    }
+
+    .service-info-details-text {
+        height: 70%;
+    }
+
+    .service-info-details-buttons {
+        height: 30%;
+    }
+
+    .service-info-details-buttons button {
+        width: 80%;
+    }
+
+    .info-top {
+        width: auto;
+        top: -65%;
+        right: 1em;
+        left: 1em;
+        height: 14em;
+    }
+
+    .info-image {
+        display: flex;
+        align-items: center;
+        height: 14em;
+    }
+
+    .info-image img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .info-text-divider {
+        display: none;
+    }
+
+    .info-text {
+        text-align: center;
+        padding: 1em !important;
+    }
+
+    .info-text-top {
+        font-size: 10px;
+    }
+
+    .info-text-bottom {
+        margin-top: 1em;
+        font-size: 10px;
+        white-space: unset;
+    }
+
+    .company-info {
+        margin-top: 15em;
+    }
+
+    .feedback-info {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 50em;
+    }
+
+    .feedback-logo {
+        height: 100px;
+        left: 40%;
+        top: -8%;
+        width: 100px;
+    }
+
+
+    .feedback-card {
+        margin: 1em 1em 2em 1em;
+    }
+
+    .feedback-heading {
+        font-size: 20px;
+    }
+
+    .footer-icons {
+        display: none;
+    }
+
+    .footer-text {
+        font-size: 10px;
+    }    
+
+    .footer-copyright {
+        font-size: 10px;
+    }
+
+    .footer-logo {
+        height: 80px;
+        width: 80px;
+        left: 40%;
+    }
+}
