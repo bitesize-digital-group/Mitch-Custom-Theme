@@ -1,4 +1,4 @@
-<?php $menu = wp_get_nav_menu_items("primary-menu"); ?>
+<?php $menu = get_menu_items_by_registered_nav_slug("primary-menu"); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -17,11 +17,12 @@
 <body <?php body_class(); ?>>
 <?php $custom_theme_data = custom_theme_get_options(); ?>
 <!-- NAVBAR -->
-<nav class="headline sticky-top">
+<div class="sticky-top">
+<nav class="headline">
 	<div class="nav-wrapper">
 		<div class="container" style="height: inherit">
 			<div class="row" style="height: 100%">
-				<div class="col s8 headline-text">
+				<div class="col s10 headline-text">
 					<span>
 						Have any questions? 
 						<b>1-800-934-9479</b>  |
@@ -29,7 +30,7 @@
 					<a href="#">car care centers</a>
 					</span>
 				</div>
-				<div class="col s4 headline-icons">
+				<div class="col s2 headline-icons">
 					<span>
 						<i class="fa fa-envelope"></i>
 					</span>
@@ -47,9 +48,9 @@
 		</div>
 	</div>
 </nav>
-<div class="sticky-top">
+<div>
 	<nav>
-	    <div class="nav-wrapper white-bg">
+	    <div class="nav-wrapper white-bg nav-on-mobile-bg">
 	      <a href="<?php echo home_url() ?>" class="brand-logo">
 			  <img src="<?php echo get_template_directory_uri() ?>/img/etereman.png" alt="Etereman" class="etereman-logo">
 		  </a>
@@ -59,6 +60,11 @@
 					<span><b>1-800-934-9479</b></span>
 					</div>
 		  <ul class="nav-center justify-content-start container hide-on-med-and-down">
+					<li class="nav-logo-hidden">
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri() ?>/img/etereman.png" alt="Etereman" class="etereman-logo">
+						</a>
+					</li>
 				<?php foreach($menu as $menus): ?>
 					<li>
 						<?php if(is_page($menus->title)) : ?>
@@ -71,15 +77,27 @@
 					</li>
 				<?php endforeach; ?>
 				<div class="searchbar">
-						<input type="text" id="search" placeholder="Search Here..">
-						<span class="fa fa-search"></span>
-					</div>
+					<input type="text" id="search" placeholder="Search Here..">
+					<span class="fa fa-search"></span>
+				</div>
 	      </ul>
 	    </div>
 	</nav>
 </div>
+</div>
 <!-- MOBILE -->
   <ul class="sidenav" id="mobile-demo">
+		<li>
+			<div class="sidenav-close-button">
+				<svg class="sidenav-close" id="i-close" xmlns="http://www.w3.org/2000/svg"
+				 		viewBox="0 0 32 32" width="45" height="45" 
+						fill="none" stroke="currentcolor" 
+						stroke-linecap="round" stroke-linejoin="round" 
+						stroke-width="3">
+					<path d="M2 30 L30 2 M30 30 L2 2" />
+				</svg>
+			</div>
+		</li>
 	<?php foreach($menu as $menus): ?>
 		<li>
 			<?php if(is_page($menus->title)) : ?>
@@ -97,6 +115,11 @@
 		<li>
 			<a href="#">car care centers</a>
 		</li>
+		<div class="searchbar">
+				<input type="text" id="search" placeholder="Search Here..">
+				<span class="fa fa-search"></span>
+			</div>
+
 		<div class="divider margin-r-1 margin-l-1"></div>
 		<div class="headline-icons-mobile margin-t-1">
 			<span>
@@ -113,4 +136,3 @@
 			</span>
 		</div>
   </ul>
-          
